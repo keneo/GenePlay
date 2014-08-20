@@ -21,7 +21,7 @@ namespace GeneSandboxLinqpad
 
 
 
-            List<Animal> generation = Enumerable.Range(0, 16).Select(e => { var x = new Animal(); x.SetRandomGenes(); return x; }).ToList();
+            List<Animal> generation = Enumerable.Range(0, 16).Select(e => new Animal()).ToList();
 
             for (int i = 0; i < 1000; i++)
             {
